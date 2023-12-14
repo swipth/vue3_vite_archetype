@@ -8,8 +8,9 @@ import {AjaxRes} from "@/types/common";
 axios.defaults.baseURL = import.meta.env.VITE_BASE_API;
 axios.defaults.timeout = 30000;
 axios.interceptors.request.use(
-  (config: AxiosRequestConfig) => {
+  (config) => {
     if (getToken()) {
+      // @ts-ignore
       config.headers = {
         openId: getToken(),
         language: getLanguage()

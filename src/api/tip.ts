@@ -1,12 +1,12 @@
 import {TranslateResult} from "vue-i18n";
-import {showDialog, showNotify} from "vant";
+import {ElMessage, ElMessageBox} from "element-plus";
 
 export const showMessage = (content: string, type = "error") => {
   if (type == "error")
-    showNotify({message: content, type: "danger"})
-  showNotify({message: content, type: "success"})
+    ElMessage({message: content, type: "error"});
+  ElMessage({message: content, type: "success"})
 }
 export const showErrorModal = (content: string | TranslateResult) => {
-  showDialog({message: content}).then(()=> {})
+  ElMessageBox({message: content}).then(()=> {})
 }
 

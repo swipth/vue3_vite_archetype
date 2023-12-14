@@ -6,6 +6,7 @@ import router, { installRouter } from '@/router'
 import { installRouterGuards } from '@/router/guard'
 import { installStore } from '@/store'
 import { installAssets } from '@/plugins/assets'
+import {setupI18n} from "@/locales";
 
 const startApp = () => {
   const app = createApp(App)
@@ -22,7 +23,7 @@ const startApp = () => {
   installElementPlus(app)
   // 自定义组件库
   installComponents(app)
-
+  setupI18n(app)
   app.mount('#app')
 }
 

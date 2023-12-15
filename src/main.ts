@@ -6,7 +6,7 @@ import router, { installRouter } from '@/router'
 import { installRouterGuards } from '@/router/guard'
 import { installStore } from '@/store'
 import { installAssets } from '@/plugins/assets'
-import {setupI18n} from "@/locales";
+import { setupI18n } from '@/locales'
 
 const startApp = () => {
   const app = createApp(App)

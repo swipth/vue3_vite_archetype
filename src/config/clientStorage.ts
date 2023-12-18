@@ -6,9 +6,7 @@ const localStorageKey = {
   languageKey: "LOCAL_LANGUAGE",
   websiteKey: "LOCAL_WEBSITE",
   defaultWebsite: "cn",
-  ErrorModalNumber:"ERROR_MODAL_NUMBER"
+  ErrorModalNumber: "ERROR_MODAL_NUMBER"
 }
-
 export const getLanguage = () => window.$wujie?.props?.language || localStorageKey.defaultLanguage;
-
 export const getToken = () => window.$wujie?.props?.token

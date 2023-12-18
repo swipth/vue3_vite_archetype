@@ -3,7 +3,7 @@ import router from '../router'
 import { translateTitle } from '@/locales'
 import { getToken, getLanguage } from '@/config/clientStorage'
 import { showErrorModal, showMessage } from '@/api/tip'
-import { AjaxRes } from '@/types/common'
+import { AjaxRes } from '@/types/common/apiResponse'
 
 axios.defaults.baseURL = import.meta.env.VITE_BASE_API
 axios.defaults.timeout = 30000

@@ -1,7 +1,7 @@
 // 获取版本信息
 import { ajax } from '@/api/ajax'
 import pkg from '../../package.json'
-import { AjaxRes } from '@/types/common'
+import { AjaxRes } from '@/types/common/apiResponse'
 
 export const checkVersion = () => ajax({ url: '/static/version.json', baseURL: '/' })
 /**

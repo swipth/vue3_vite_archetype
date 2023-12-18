@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { GlobalState } from "@/stores/interface";
+import { GlobalState } from "@/stores/modules";
 import { DEFAULT_PRIMARY } from "@/config";
 import piniaPersistConfig from "@/stores/helper/persist";
 

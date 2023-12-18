@@ -15,8 +15,8 @@ export const networkKey: {
   dataName: string;
   noShowApiMessage: string[];
   loginPath: string;
-  messageDuration:number;
-  defaultLogoutTime:number
+  messageDuration: number;
+  defaultLogoutTime: number;
 } = {
   // 网络传输类型 // form-data 一般配合qs
   contentType: "application/x-www-form-urlencoded;charset=UTF-8",
@@ -25,7 +25,7 @@ export const networkKey: {
   // text
   contentTextType: "text/plain;charset=UTF-8",
   // form-data  一般用于含有二进制文件上传
-  contentMultipartFormType:"multipart/form-data;charset=UTF-8",
+  contentMultipartFormType: "multipart/form-data;charset=UTF-8",
   // form-data  上传
   // 最长请求时间 30s
   requestTimeout: 30000,
@@ -42,10 +42,9 @@ export const networkKey: {
   // 后台哪些api接口不走消息提示
   noShowApiMessage: [],
   // 登录地址
-  loginPath:"/auth/login",
+  loginPath: "/auth/login",
   // 消息框消失时间
-  messageDuration:3000,
+  messageDuration: 3000,
   // 用户静默退出时间
-  defaultLogoutTime:2 * 60 * 60 * 1000
-}
-
+  defaultLogoutTime: 2 * 60 * 60 * 1000
+};

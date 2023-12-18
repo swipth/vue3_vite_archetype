@@ -21,6 +21,9 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'comma-dangle':'off',
     'quotes':'off',
+    'prefer-promise-reject-errors':'off',
+    'object-curly-spacing':'off',
     'semi':'off',
+    'space-before-function-paren':'off',
   }
 }

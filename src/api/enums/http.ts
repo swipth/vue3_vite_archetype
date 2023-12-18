@@ -5,5 +5,5 @@ export enum ApiResultEnum {
   SUCCESS = 0,
   ERROR = -1,
   TIMEOUT = 10042,
-  TYPE = 'success',
+  TYPE = "success"
 }

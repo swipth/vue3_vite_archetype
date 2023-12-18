@@ -5,8 +5,8 @@
 export const importAll = (pathRule: string) => {
   const allModules = import.meta.glob<any>(pathRule, { eager: true });
   const modules = {} as any;
-  Object.keys(allModules).forEach((path) => {
-    const fileName = path.replace(/(.*\/)*([^.]+).*/gi, '$2');
+  Object.keys(allModules).forEach(path => {
+    const fileName = path.replace(/(.*\/)*([^.]+).*/gi, "$2");
     modules[fileName] = allModules[path].default;
   });
   return modules;

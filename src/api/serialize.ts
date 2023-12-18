@@ -1,4 +1,4 @@
-import qs from 'qs'
+import qs from "qs";
 
 /**
  * 数据是否进行序列化转换
@@ -6,4 +6,5 @@ import qs from 'qs'
  * @param data 数据
  * @returns {*}
  */
-export const paramsSerialize = (paramsSerialization:boolean, data:Record<string, unknown>) => (paramsSerialization ? qs.stringify(data) : data)
+export const paramsSerialize = (paramsSerialization: boolean, data: Record<string, unknown>) =>
+  paramsSerialization ? qs.stringify(data) : data;

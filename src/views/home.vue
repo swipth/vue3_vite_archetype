@@ -1,16 +1,12 @@
 <template>
-  <div class="home">
-   home
-  </div>
+  <div class="home">home</div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'home'
-})
+  name: "home"
+});
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>

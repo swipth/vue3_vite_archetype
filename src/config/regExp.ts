@@ -3,7 +3,8 @@ export const regExp = {
   // 传真校验
   faxReg: /^(\d{3,4}-)?\d{7,8}$/,
   // 邮箱校验
-  emailReg: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+  emailReg:
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
   // 邮编校验
   postalReg: /^\d{6}$/,
   // qq
@@ -23,4 +24,4 @@ export const regExp = {
   SocialCodeReg: /^[0-9a-zA-Z]{18}$/,
   // 整数的校验
   numberReg: /^[0-9]*$/
-}
+};

@@ -70,8 +70,15 @@ export default  defineConfig(({ mode }: ConfigEnv): UserConfig => {
           // Static resource classification and packaging
           chunkFileNames: "static/js/[name]-[hash].js",
           entryFileNames: "static/js/[name]-[hash].js",
-          assetFileNames: "static/[ext]/[name]-[hash].[ext]"
-        }
+          assetFileNames: "static/[ext]/[name]-[hash].[ext]",
+          // 不改变的包不改变hash 支持本地缓存
+          manualChunks(id){
+            if(id.includes("node_modules")){
+              return "vendor"
+            }
+          }
+        },
+
       }
     }
   }
